@@ -1,6 +1,6 @@
 <?php
 
-namespace Acf\Field;
+namespace Acf\Field\EncryptedPassword;
 
 /**
  * Exit if accessed directly
