@@ -1,0 +1,32 @@
+{
+  "name": "log1x/acf-encrypted-password",
+  "type": "wordpress-plugin",
+  "license": "MIT",
+  "description": "A simple ACF field to use in place of the default Password field to encrypt the password stored in the database using PHP 5.5's password_hash.",
+  "homepage": "https://github.com/log1x/acf-encrypted-password",
+  "authors": [
+    {
+      "name": "Brandon Nifong",
+      "email": "log1x@log1x.com",
+      "homepage": "https://log1x.com"
+    }
+  ],
+  "keywords": [
+    "wordpress"
+  ],
+  "support": {
+    "issues": "https://github.com/log1x/acf-encrypted-password/issues"
+  },
+  "require": {
+    "php": ">=7",
+    "composer/installers": "~1.0"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "2.*"
+  },
+  "scripts": {
+    "test": [
+      "vendor/bin/phpcs --extensions=php --ignore=vendor/ ."
+    ]
+  }
+}
