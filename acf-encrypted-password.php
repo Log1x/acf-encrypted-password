@@ -31,7 +31,7 @@ if (!class_exists('init')) {
 				'path'		=> plugin_dir_path(__FILE__)
 			];
 
-			load_plugin_textdomain('acf-encrypted_password', false, plugin_basename(dirname(__FILE__ )) . '/lang');
+			load_plugin_textdomain('acf-encrypted-password', false, plugin_basename(dirname(__FILE__ )) . '/lang');
 			add_action('acf/include_field_types', [$this, 'field_types']);
 			add_action('acf/register_fields', [$this, 'field_types']);
 		}

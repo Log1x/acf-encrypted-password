@@ -14,7 +14,7 @@ This is a simple ACF field to use in place of the default Password field to encr
 ## Usage
 You can verify the password using PHP 5.5's `password_verify()` function like so:
 
-```
+```php
 $input = $_GET['password'];
 $hash  = get_field('password');
 
