@@ -59,7 +59,7 @@ if (!class_exists('EncryptedPassword')) {
     	 */
     	public function render_field($field)
         {
-    	    echo '<input type="password" name="' . esc_attr($field['name']) . '" value="' . esc_attr($field['value']) . '" />';
+    	    echo '<input type="password" name="' . esc_attr($field['name']) . '" placeholder="' . esc_attr($field['placeholder']) . '" />';
     	}
 
         /**
