@@ -59,7 +59,7 @@ if (!class_exists('EncryptedPassword')) {
     	 */
     	public function render_field($field)
         {
-    	    echo '<input type="password" name="' . esc_attr($field['name']) . '" placeholder="' . esc_attr($field['placeholder']) . '" />';
+    	    echo '<input type="password" name="' . esc_attr($field['name']) . '" value="' . esc_attr($field['value']) . '" placeholder="' . esc_attr($field['placeholder']) . '" />';
     	}
 
         /**
@@ -90,6 +90,13 @@ if (!class_exists('EncryptedPassword')) {
     	 */
     	public function update_value($value, $post_id, $field)
         {
+            $prefix = '$2y';
+
+            // Do nothing is the value is our hash.
+            if (strpos($value, $prefix) === 0) {
+                return;
+            }
+
     		return password_hash($value, PASSWORD_DEFAULT);
     	}
 
