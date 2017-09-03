@@ -92,12 +92,12 @@ if (!class_exists('EncryptedPassword')) {
         {
             $prefix = '$2y';
 
-            // Do nothing is the value is our hash.
+            // Do nothing is the value is already our hash.
             if (strpos($value, $prefix) === 0) {
-                return;
+                return $value;
             }
 
-    		return password_hash($value, PASSWORD_DEFAULT);
+		        return password_hash($value, PASSWORD_DEFAULT);
     	}
 
         /**
