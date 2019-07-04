@@ -7,26 +7,19 @@
   "authors": [
     {
       "name": "Brandon Nifong",
-      "email": "log1x@log1x.com",
+      "email": "brandon@tendency.me",
       "homepage": "https://log1x.com"
     }
   ],
   "keywords": [
-    "wordpress"
+    "wordpress",
+    "acf",
+    "acf-field"
   ],
   "support": {
     "issues": "https://github.com/log1x/acf-encrypted-password/issues"
   },
   "require": {
-    "php": ">=7",
-    "composer/installers": "~1.0"
-  },
-  "require-dev": {
-    "squizlabs/php_codesniffer": "2.*"
-  },
-  "scripts": {
-    "test": [
-      "vendor/bin/phpcs --extensions=php --ignore=vendor/ ."
-    ]
+    "php": ">=7"
   }
 }
